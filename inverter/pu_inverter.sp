@@ -1,12 +1,12 @@
-* Standard sized inverter
+* Pull Up dominated inverter
 .inc '../lib/16nm_HP.pm'
 
 .param fsize = 16n
 
 .global vdd
 
-Mp1	out	in	vdd vdd	pmos	l='fsize'	w='2*fsize'
-Mn1	out	in	gnd gnd	nmos	l='fsize'	w='1*fsize'
+Mp1	out	in	vdd vdd	pmos	l='fsize'	w='4*fsize'
+Mn1	out	in	gnd gnd	nmos	l='fsize'	w='fsize'
 vdd vdd 0 0.7
 
 vin	in	0 0	pulse	0 0.7 10ns 0.1ps 0.1ps 20ns 80ns
