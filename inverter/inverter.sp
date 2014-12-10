@@ -12,6 +12,7 @@ vdd vdd 0 0.7
 vin	in	0 0	pulse	0 0.7 10ns 0.1ps 0.1ps 20ns 80ns
 Cl	out	0	0.3p
 
+.op
 .tran 1n 80n
 .control
 run
