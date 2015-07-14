@@ -4,6 +4,7 @@
 .param size = 16n
 vdd vdd 0 0.9V
 vin in gnd 0.9V
+*vin in gnd gnd
 
 mp out clk vdd vdd pmos w={size*2} l={size*2}
 mn out in n1 gnd nmos w={size*4} l={size*2}
